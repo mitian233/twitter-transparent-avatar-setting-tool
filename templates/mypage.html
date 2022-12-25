@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Mypage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<h1>アバターを選択</h1>
+<form method="post" action="/setheadpic.html" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" onchange="upload()"/>
+    <input type="submit" value="確認"/>
+</form>
+<input type="button" value="サインアウト" onclick="window.location.href='/logout'">
+</body>
+</html>

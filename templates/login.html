@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter アカウントログイン</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div>
+    <h1>Twitter アカウントログイン</h1>
+    <input type="button" onclick="window.open('{{auth_url}}');" value="Open Twitter Authentication Page" />
+    <form method="post" action="/setcookie">
+        <input type="text" name="oauth_pin" placeholder="PINを入力" />
+        <input type="submit" value="確認" />
+    </form>
+</div>
+</body>
+</html>
